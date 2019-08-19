@@ -84,9 +84,9 @@
         <View
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:layout_marginBottom="5dp"
-            android:background="#000"/>
+            android:background="#FF797979"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -99,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:text="Create an account"
                 android:textStyle="bold"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
 
             <TextView
                 android:id="@+id/idNot"
@@ -113,9 +114,27 @@
                 android:id="@+id/idBar"
                 android:layout_width="2dp"
                 android:layout_height="100dp"
-                android:background="#000"
+                android:background="#797979"
                 android:layout_toRightOf="@id/idCreate"
                 android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/idPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/idBar"/>
+
+            <TextView
+                android:id="@+id/idProm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not a member?"
+                android:textSize="15sp"
+                android:layout_below="@id/idPass"/>
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

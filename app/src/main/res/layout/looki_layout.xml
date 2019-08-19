@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_locki"
+    android:orientation="vertical"
+    tools:context=".Looki_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/looki" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It's Never Been So Easier"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_personlooki"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:textColorHint="#fff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/lock_looki"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:textColorHint="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Login in"
+            android:textAllCaps="false"
+            android:background="#159DE3"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#336699"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/icon_fb"
+            android:text="login with facebook"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/idNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not a member?"
+                android:textSize="15sp"
+                android:layout_below="@id/idCreate"/>
+
+            <View
+                android:id="@+id/idBar"
+                android:layout_width="2dp"
+                android:layout_height="100dp"
+                android:background="#000"
+                android:layout_toRightOf="@id/idCreate"
+                android:layout_marginLeft="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

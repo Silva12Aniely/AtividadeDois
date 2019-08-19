@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdventureActivity">
+        <activity android:name=".Looki_Activity"></activity>
+        <activity
+            android:name=".Blue_Activity"
+            android:theme="@style/AppThemeTwo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".City_Activity">
-
-        </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AdventureActivity"></activity>
+        <activity android:name=".City_Activity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -4,47 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".City_Activity"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    tools:context=".City_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:orientation="horizontal"
-        android:background="#E85404">
+        android:background="#E85404"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             android:drawableLeft="@drawable/ic_city"
-            android:paddingLeft="10dp"/>
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/city_guide"
-            android:textSize="33sp"
             android:layout_marginTop="4dp"
+            android:text="@string/city_guide"
             android:textColor="#FFF"
-            android:textStyle="bold"/>
+            android:textSize="33sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/search"
+            android:drawableLeft="@drawable/ic_search"
             android:hint="Search"
             android:padding="10dp"
             android:textColorHint="#ccc"
-            android:textSize="28sp"
-            android:drawableLeft="@drawable/ic_search"/>
+            android:textSize="28sp" />
 
     </LinearLayout>
 
@@ -61,29 +62,29 @@
                 android:id="@+id/food"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:text="Food"
+                android:layout_marginRight="30dp"
                 android:background="#E20089"
                 android:drawableTop="@drawable/ic_food"
-                android:textSize="22sp"
                 android:paddingTop="10dp"
+                android:text="Food"
+                android:textAllCaps="false"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:layout_marginRight="30dp"
-                android:textAllCaps="false"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/books"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
+                android:layout_toRightOf="@id/food"
                 android:background="#168FE1"
                 android:drawableTop="@drawable/ic_book"
                 android:paddingTop="10dp"
                 android:text="Books"
+                android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_toRightOf="@id/food"
-                android:textAllCaps="false"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/pet"
@@ -95,27 +96,27 @@
                 android:drawableTop="@drawable/ic_pets"
                 android:paddingTop="10dp"
                 android:text="Pet Care"
+                android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textAllCaps="false" />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/clothing"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
+                android:layout_below="@id/books"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/pet"
                 android:background="#433499"
                 android:drawableTop="@drawable/ic_tshirt"
                 android:paddingTop="10dp"
                 android:text="Clothing"
+                android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_below="@id/books"
-                android:layout_toRightOf="@id/pet"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:textAllCaps="false"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/photo"
@@ -123,14 +124,15 @@
                 android:layout_height="160dp"
                 android:layout_below="@id/pet"
                 android:layout_marginTop="30dp"
-                android:background="#79CB04"
+                android:layout_marginBottom="30dp"
+                android:background="#F68502"
                 android:drawableTop="@drawable/ic_photo"
                 android:paddingTop="10dp"
                 android:text="Photography"
+                android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textAllCaps="false"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/bev"
@@ -139,16 +141,16 @@
                 android:layout_below="@id/clothing"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
                 android:layout_toRightOf="@id/pet"
-                android:background="#433499"
+                android:background="#F20101"
                 android:drawableTop="@drawable/ic_coffee"
                 android:paddingTop="10dp"
                 android:text="Beverages"
+                android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textAllCaps="false" />
-
+                android:textStyle="bold" />
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

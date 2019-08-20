@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Whats_Activity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/actionBarSize"
+        android:background="#E9384D"
+        app:title="What's Here"
+        app:titleTextColor="#fff"
+        app:navigationIcon="@drawable/ic_location">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/location"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/idbeer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_circle_green"
+            android:drawableLeft="@drawable/ic_beer"
+            android:paddingLeft="12dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/lblbeer"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Bars"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/idbeer"/>
+
+        <Button
+            android:id="@+id/idcard"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_circle_orange"
+            android:drawableLeft="@drawable/ic_card"
+            android:paddingLeft="12dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@id/idbeer"/>
+
+        <TextView
+            android:id="@+id/lblcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank/ATM"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/idcard"
+            android:layout_marginLeft="112dp"
+            android:layout_toRightOf="@id/lblbeer"/>
+
+        <Button
+            android:id="@+id/idcoffe"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_circle_wine"
+            android:drawableLeft="@drawable/ic_coffee_shop"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblbeer"/>
+
+        <TextView
+            android:id="@+id/lblcoffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffe Shops"
+            android:gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/idcoffe"/>
+
+        <Button
+            android:id="@+id/idconcert"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_circle_blue"
+            android:drawableLeft="@drawable/ic_concerts"
+            android:paddingLeft="12dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/idcoffe"
+            android:layout_below="@id/lblcard"/>
+
+        <TextView
+            android:id="@+id/lblconcert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/idconcert"
+            android:layout_marginLeft="99dp"
+            android:layout_toRightOf="@id/lblcoffe"/>
+
+        <Button
+            android:id="@+id/idgas"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_circle_pink"
+            android:drawableLeft="@drawable/ic_gas"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblcoffe"/>
+
+        <TextView
+            android:id="@+id/lblgas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gas Stations"
+            android:gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/idgas"/>
+
+    </RelativeLayout>
+</LinearLayout>

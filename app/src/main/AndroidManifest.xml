@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".University_Activity"></activity>
+        <activity
+            android:name=".Diamond_two_Activity"
+            android:theme="@style/AppDiamond" />
+        <activity android:name=".Diamond_Activity" />
         <activity android:name=".Whats_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Looki_Activity">
-
-        </activity>
+        <activity android:name=".Looki_Activity" />
         <activity
             android:name=".Blue_Activity"
-            android:theme="@style/AppThemeTwo"></activity>
+            android:theme="@style/AppThemeTwo" />
         <activity android:name=".AdventureActivity" />
         <activity android:name=".City_Activity" />
         <activity android:name=".MainActivity" />

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".University_Activity"
+    android:background="#393F46">
+
+    <RelativeLayout
+        android:id="@+id/idbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/idTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State University"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textAlignment="center"/>
+
+        <View
+            android:id="@+id/barUni"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/idTittle"
+            android:layout_marginTop="20dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/lblsince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTittle"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/barUni"
+            android:padding="8dp"
+            android:text="since 1935"
+            android:textSize="18sp"
+            android:textColor="#fff" />
+
+        <View
+            android:id="@+id/barUniTwo"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/idTittle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/lblsince"
+            android:background="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idbanner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:background="@drawable/btn_university_one"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/ic_about_university"
+            android:paddingTop="20dp"
+            android:text="About Us"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_events"
+            android:paddingTop="20dp"
+            android:text="Events"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/btnAbout"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            android:id="@+id/btnCurriculum"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_curriculum"
+            android:paddingTop="25dp"
+            android:text="Curriculum"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_below="@id/btnAbout"/>
+
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btnCurriculum"
+            android:layout_below="@id/btnEvents"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_news"
+            android:paddingTop="25dp"
+            android:text="News"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSports"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/btnCurriculum"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_about_university"
+            android:paddingTop="20dp"
+            android:text="Sports"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnContacts"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/btnNews"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btnSports"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_about_university"
+            android:paddingTop="20dp"
+            android:text="Contacts"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnFaceb"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnSports"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_about_university"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnContacts"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btnFaceb"
+            android:background="@drawable/btn_university_one"
+            android:drawableTop="@drawable/ic_about_university"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

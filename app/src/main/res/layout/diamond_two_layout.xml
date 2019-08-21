@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#69ADEE"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Diamond_two_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="mobile"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="65sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_diamond_two"
+            android:drawableLeft="@drawable/ic_personlooki"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_diamond_two"
+            android:drawableLeft="@drawable/lock_looki"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ckcDiamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_diamond"
+                android:backgroundTint="#00FFFFFF"
+                android:checked="true"
+                android:text="Remember Me"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/idSingIn"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/ckcDiamond"
+                android:background="@drawable/background_diamond"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <View
+                android:id="@+id/barDiamond"
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/ckcDiamond"
+                android:layout_marginTop="50dp"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/lblcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ckcDiamond"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:layout_toRightOf="@id/barDiamond"
+                android:padding="5dp"
+                android:text="Or connect with"
+                android:textColor="#fff" />
+
+            <View
+                android:id="@+id/barDiamondTwo"
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/ckcDiamond"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/lblcon"
+                android:background="#fff" />
+
+            <Button
+                android:id="@+id/btnF"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/barDiamond"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_diamond_two"
+                android:text="F"
+                android:layout_marginLeft="50dp"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnG"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/barDiamond"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_diamond_two"
+                android:text="G"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/btnF"/>
+
+            <Button
+                android:id="@+id/btnT"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/barDiamond"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_diamond_two"
+                android:text="T"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/btnG"/>
+
+            <TextView
+                android:id="@+id/idDont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_below="@id/btnF"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="18sp"
+                android:textColor="#2F74B8"
+                android:layout_toRightOf="@id/idDont"
+                android:layout_below="@id/btnT"
+                android:layout_marginTop="80dp"
+                android:paddingLeft="10dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

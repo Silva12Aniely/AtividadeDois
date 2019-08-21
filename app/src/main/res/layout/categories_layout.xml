@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".Categories_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#79A6A4"
+        app:navigationIcon="@drawable/ic_tag"
+        app:title="Categories"
+        app:titleTextColor="#fff">
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/idWoman"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:background="#87A6A1"
+        android:drawableTop="@drawable/ic_shoe"
+        android:drawablePadding="25dp"
+        android:padding="46dp"
+        android:text="Woman"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/man"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_toRightOf="@id/idWoman"
+        android:background="#69888A"
+        android:drawableTop="@drawable/ic_tie"
+        android:drawablePadding="26dp"
+        android:padding="46dp"
+        android:text="Man"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/idBaby"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idWoman"
+        android:background="#5C8086"
+        android:drawableTop="@drawable/ic_baby"
+        android:drawablePadding="26dp"
+        android:padding="46dp"
+        android:text="Baby"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Travel"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/man"
+        android:layout_toRightOf="@id/idWoman"
+        android:background="#486E77"
+        android:drawableTop="@drawable/ic_travel"
+        android:drawablePadding="26dp"
+        android:padding="46dp"
+        android:text="Travel"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/idtech"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBaby"
+        android:background="#3C626B"
+        android:drawableTop="@drawable/ic_tech"
+        android:drawablePadding="26dp"
+        android:padding="46dp"
+        android:text="Tech"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/idfood"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Travel"
+        android:layout_toRightOf="@id/idWoman"
+        android:background="#2E5260"
+        android:drawableTop="@drawable/ic_drink"
+        android:drawablePadding="27dp"
+        android:padding="47dp"
+        android:text="Food/Drink"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Zad_Activity"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zad_login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back,"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="#000"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:hint="ernser.martin@feil.com"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="******************"
+        android:padding="18dp"
+        android:drawableRight="@drawable/ic_show"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:gravity="right"
+        android:padding="18dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="#6747CC"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New user?"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:paddingLeft="18dp"
+            android:textColor="#6747CC"
+            android:layout_toRightOf="@id/user"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
